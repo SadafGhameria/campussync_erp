@@ -1,0 +1,95 @@
+.drawer-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  display:flex;
+  justify-content:flex-end;
+  z-index:1000;
+}
+
+.student-drawer{
+  width:520px;
+  max-width:100%;
+  height:100vh;
+  background:#fff;
+  overflow-y:auto;
+  padding:25px;
+  box-shadow:-10px 0 30px rgba(0,0,0,.15);
+}
+
+.drawer-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.drawer-header button{
+  border:none;
+  background:#f1f5f9;
+  border-radius:10px;
+  padding:10px;
+  cursor:pointer;
+}
+
+.student-form h3{
+  margin:25px 0 15px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea{
+  padding:12px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  font-size:14px;
+}
+
+.address-box{
+  grid-column:1/3;
+  min-height:90px;
+}
+
+.drawer-buttons{
+  display:flex;
+  justify-content:flex-end;
+  gap:15px;
+  margin-top:30px;
+}
+
+.cancel-btn,
+.save-btn{
+  padding:12px 22px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.cancel-btn{
+  background:#e5e7eb;
+}
+
+.save-btn{
+  background:#2563eb;
+  color:white;
+}
+
+@media(max-width:768px){
+  .student-drawer{
+    width:100%;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .address-box{
+    grid-column:auto;
+  }
+}

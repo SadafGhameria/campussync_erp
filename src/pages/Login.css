@@ -1,0 +1,175 @@
+.login-page{
+    min-height:100vh;
+    display:flex;
+    background:#F8FAFC;
+}
+
+/* LEFT */
+
+.login-left{
+    flex:1;
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:70px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.login-left h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.login-left p{
+    line-height:1.8;
+    max-width:450px;
+    margin-bottom:40px;
+}
+
+.login-features{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    font-size:18px;
+}
+
+/* RIGHT */
+
+.login-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.login-card{
+    width:450px;
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.login-card h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    color:#64748B;
+    margin-bottom:35px;
+}
+
+.form-error{
+    color:#b91c1c !important;
+    font-size:14px;
+    margin:10px 0 !important;
+}
+
+.input-group{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    border:1px solid #CBD5E1;
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.input-group input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.forgot{
+    color:#2563EB;
+    cursor:pointer;
+}
+
+.login-btn2{
+    width:100%;
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:16px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn2:hover{
+    background:#1D4ED8;
+}
+
+.register-link{
+    margin-top:25px;
+    text-align:center;
+}
+
+.register-link a{
+    color:#2563EB;
+    font-weight:600;
+    margin-left:5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.login-page{
+    flex-direction:column;
+}
+
+.login-left{
+    padding:50px 30px;
+    text-align:center;
+}
+
+.brand{
+    justify-content:center;
+}
+
+.login-card{
+    width:100%;
+    max-width:450px;
+}
+
+}
+
+@media(max-width:500px){
+
+.login-card{
+    padding:30px 20px;
+}
+
+.login-left h2{
+    font-size:32px;
+}
+
+.login-options{
+    flex-direction:column;
+    gap:10px;
+}
+
+}

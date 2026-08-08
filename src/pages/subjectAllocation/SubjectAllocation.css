@@ -1,0 +1,289 @@
+.subject-allocation-page {
+  padding: 25px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Header */
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  font-size: 30px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #64748b;
+}
+
+/* Form */
+
+.allocation-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.allocation-form h2{
+  grid-column:1/-1;
+  color:#2563eb;
+}
+
+.allocation-form input,
+.allocation-form select{
+  padding:12px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  outline:none;
+  font-size:15px;
+  transition:.3s;
+}
+
+.allocation-form input:focus,
+.allocation-form select:focus{
+  border-color:#2563eb;
+}
+
+.allocation-form button{
+  grid-column:1/-1;
+
+  padding:14px;
+
+  border:none;
+
+  background:#2563eb;
+
+  color:white;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  transition:.3s;
+}
+
+.allocation-form button:hover{
+
+  background:#1d4ed8;
+
+}
+
+/* Search */
+
+.search-box{
+
+  margin-bottom:20px;
+
+}
+
+.search-box input{
+
+  width:100%;
+
+  padding:12px;
+
+  border-radius:8px;
+
+  border:1px solid #d1d5db;
+
+}
+
+/* Table */
+
+.allocation-table-container{
+
+  overflow-x:auto;
+
+  background:white;
+
+  border-radius:14px;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.allocation-table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+}
+
+.allocation-table th{
+
+  background:#2563eb;
+
+  color:white;
+
+  padding:14px;
+
+  text-align:left;
+
+}
+
+.allocation-table td{
+
+  padding:14px;
+
+  border-bottom:1px solid #e5e7eb;
+
+}
+
+.allocation-table tbody tr:hover{
+
+  background:#f8fafc;
+
+}
+
+/* Buttons */
+
+.action-buttons{
+
+  display:flex;
+
+  gap:10px;
+
+}
+
+.edit-btn{
+
+  background:#f59e0b;
+
+  color:white;
+
+  border:none;
+
+  width:36px;
+
+  height:36px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+}
+
+.delete-btn{
+
+  background:#ef4444;
+
+  color:white;
+
+  border:none;
+
+  width:36px;
+
+  height:36px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+}
+
+.edit-btn:hover{
+
+  background:#d97706;
+
+}
+
+.delete-btn:hover{
+
+  background:#dc2626;
+
+}
+
+/* Empty */
+
+.empty-table{
+
+  background:white;
+
+  padding:40px;
+
+  text-align:center;
+
+  border-radius:14px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.allocation-form{
+
+grid-template-columns:1fr;
+
+}
+
+.page-header h1{
+
+font-size:24px;
+
+}
+
+}
+
+/* Allocation List */
+
+.allocation-list-section{
+    margin-top:30px;
+    background:#fff;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.allocation-list-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.allocation-list-header h2{
+    font-size:26px;
+    color:#1e3a8a;
+}
+
+.allocation-search{
+    width:320px;
+    height:42px;
+    padding:0 15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+.allocation-search:focus{
+    border-color:#2563eb;
+}
+.empty-state{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.empty-state h3{
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+.empty-state p{
+    color:#6b7280;
+}

@@ -1,0 +1,154 @@
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  background: #0F172A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.sidebar.collapsed {
+  width: 90px;
+}
+
+.sidebar-top {
+  padding: 25px 20px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-logo h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sidebar-logo span {
+  font-size: 12px;
+  color: #CBD5E1;
+}
+
+.collapse-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1E293B;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.collapse-btn:hover {
+  background: #2563EB;
+}
+
+.sidebar-menu {
+  flex: 1;
+  padding: 15px 10px;
+  overflow-y: auto;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 20px;
+}
+
+.menu-heading {
+  color: #94A3B8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 22px 12px 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #E2E8F0;
+  margin-bottom: 5px;
+  transition: all 0.25s ease;
+}
+
+.menu-item:hover {
+  background: #1E293B;
+  color: white;
+}
+
+.menu-item.active {
+  background: #2563EB;
+  color: white;
+}
+
+.menu-item svg {
+  flex-shrink: 0;
+}
+
+.sidebar-bottom {
+  padding: 20px;
+}
+
+.logout-btn {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  background: #DC2626;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #B91C1C;
+}
+
+.sidebar.collapsed .sidebar-logo div,
+.sidebar.collapsed .menu-heading,
+.sidebar.collapsed .menu-item span,
+.sidebar.collapsed .logout-btn span {
+  display: none;
+}
+
+.sidebar.collapsed .menu-item {
+  justify-content: center;
+}
+
+.sidebar.collapsed .sidebar-logo {
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-100%);
+    width: 280px;
+  }
+}
