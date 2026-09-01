@@ -1,4 +1,4 @@
-🎓 CampusSync ERP
+CampusSync ERP
 
 CampusSync ERP is a full-stack College Management System designed to simplify academic and administrative tasks. It provides a centralized platform for managing institutions, students, courses, enrollments, and attendance.
 
@@ -6,14 +6,14 @@ The application is built using React + Vite for the frontend and Node.js, Expres
 
 ✨ Features
 
-- 🔐 Institution & Admin Authentication
+- Institution & Admin Authentication
   
   - Institution registration
   - Admin login
   - JWT-based authentication
   - Institution-specific access
 
-- 👨‍🎓 Student Management
+- Student Management
   
   - Create student records
   - View student records
@@ -21,25 +21,25 @@ The application is built using React + Vite for the frontend and Node.js, Expres
   - Delete student records
   - Live CRUD operations
 
-- 📚 Course Management
+- Course Management
   
   - View course records
   - Create, update, and delete courses
   - Backend-connected course data
 
-- 📝 Course Enrollment
+- Course Enrollment
   
   - Enroll students in courses
   - View student-wise enrollments
   - View course-wise enrollments
 
-- 📊 Attendance Management
+- Attendance Management
   
   - Create attendance sessions
   - Mark student attendance
   - Access course and student attendance reports
 
-🛠️ Tech Stack
+Tech Stack
 
 Frontend
 
@@ -66,7 +66,7 @@ Tools
 - GitHub
 - npm
 
-🚀 Run Locally
+Run Locally
 
 Prerequisites
 
